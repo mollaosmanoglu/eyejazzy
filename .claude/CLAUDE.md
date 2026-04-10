@@ -1,7 +1,7 @@
 <instructions>
 - Clarify the task briefly, then make the change.
 - Prefer small, focused edits over large rewrites.
-- Fix ruff/pyright errors at the source; never suppress without justification.
+- This is a Claude Code plugin (markdown-only, no code). Changes are to SKILL.md and plugin.json.
 - Scope issues to ~1-2 commits.
 </instructions>
 
@@ -30,11 +30,12 @@
 - No mixing unrelated responsibilities.
 - No premature optimisation or over-generalisation/engineering.
 - No UI components outside of shadcn and Motion. No custom components, no other libraries.
+- No code unless absolutely necessary. This plugin is markdown-driven.
 </forbidden>
 
 <validation>
-After every code change:
-  ruff → pyright → pytest — must be green before moving on.
+Test by running: claude --plugin-dir /Users/Faruk/Desktop/projects/eyejazzy
+Then invoke /eyejazzy:analyze to verify.
 </validation>
 
 <commits>
