@@ -1,9 +1,19 @@
+<p align="center">
+  <img src="docs/logo.png" alt="eyejazzy logo" width="200"/>
+</p>
+
 # eyejazzy
 
 ![Claude Code](https://img.shields.io/badge/Claude_Code-skill-8A63D2)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
 Claude Code skill that measures engineering ownership. Do you steer the AI, or does it steer you?
+
+## Visual Overview
+
+<p align="center">
+  <img src="docs/analysis-flow.png" alt="Analysis workflow" width="700"/>
+</p>
 
 ## Install
 
@@ -53,6 +63,15 @@ High steering ratio = you maintain context, think critically, catch mistakes.
 Low steering ratio = you accept without judgment, lose architectural coherence.
 
 This skill reveals your engineering posture, not just code output.
+
+## Tech Stack
+
+| Component | Tools                                 |
+| --------- | ------------------------------------- |
+| Platform  | Claude Code skill framework           |
+| Format    | JSONL session log parsing             |
+| Tools     | Read, Bash, Grep, Glob (no LLM calls) |
+| Language  | Shell scripting via skill DSL         |
 
 ## Example Output
 
